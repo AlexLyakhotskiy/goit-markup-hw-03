@@ -2,18 +2,33 @@
   --primary-text-color: #757575;
   --title-text-color: #212121;
   --accent-color: #2196f3;
+  --background-color-primal: #ffffff;
+  --background-color-secondary: #2f303a;
 }
 
 body {
   color: var(--primary-text-color);
-  background-color: #ffffff;
+  background-color: var(--background-color-primal);
 
   font-family: roboto, sans-serif;
   letter-spacing: 0.03em;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  padding: 0;
+  margin: 0;
+}
+
 .list {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .link {
@@ -27,7 +42,19 @@ body {
   font-family: inherit;
 }
 
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
 /* header */
+
+.header {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
 
 .logo {
   color: var(--accent-color);
@@ -73,7 +100,7 @@ body {
 /* footer */
 
 .footer-logo {
-  color: #ffffff;
+  color: var(--background-color-primal);
 
   font-family: Raleway, sans-serif;
   font-weight: 700;
@@ -82,7 +109,7 @@ body {
 }
 
 .address-text {
-  color: #ffffff;
+  color: var(--background-color-primal);
 }
 
 .address-link {
@@ -97,7 +124,9 @@ body {
 }
 
 .footer {
-  background-color: black;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background: var(--background-color-secondary);
 }
 
 .address-text,
@@ -111,8 +140,12 @@ body {
 
 /* hero section */
 
+.hero {
+  text-align: center;
+}
+
 .hero-button {
-  color: #ffffff;
+  color: var(--background-color-primal);
   background-color: var(--accent-color);
 
   font-weight: 700;
@@ -127,18 +160,20 @@ body {
 }
 
 .hero-title {
-  color: #ffffff;
+  color: var(--background-color-primal);
 
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+
+  margin-top: 0;
+  margin-bottom: 30px;
 }
 
 .hero {
-  background-color: black;
+  background: var(--background-color-secondary);
 }
 
 .section-title {
@@ -147,9 +182,20 @@ body {
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
+
+  margin-bottom: 50px;
 }
 
 /* feature section */
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.section.no-padding {
+  padding-top: 0;
+}
 
 .feature-title {
   color: var(--title-text-color);
@@ -157,6 +203,8 @@ body {
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
+
+  margin-bottom: 10px;
 }
 
 .feature-text {
@@ -209,6 +257,6 @@ body {
 
 .portfolio-button:hover,
 .portfolio-button:focus {
-  color: #ffffff;
+  color: var(--background-color-primal);
   background-color: var(--accent-color);
 }
