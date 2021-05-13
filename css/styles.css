@@ -151,6 +151,9 @@ p {
 }
 
 .address-link {
+  padding-top: 4px;
+  padding-bottom: 4px;
+
   color: rgba(255, 255, 255, 0.6);
 }
 
